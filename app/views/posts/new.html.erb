@@ -1,0 +1,15 @@
+새로 등록하기!
+<%= form_tag posts_path do %>
+
+<div class="input-field">
+	<%= text_area_tag :name, nil, class: "materialize-textarea", placeholder: "가게이름" %>
+	<%= text_area_tag :address, nil, class: "materialize-textarea", placeholder: "주소" %>
+	<%= text_area_tag :tel, nil, class: "materialize-textarea", placeholder: "전화번호" %>
+	<%= text_area_tag :score, nil, class: "materialize-textarea", placeholder: "가게점수" %>
+	<%= text_area_tag :img, nil, class: "materialize-textarea", placeholder: "이미지링크" %>
+</div>
+
+<div class="input-field">
+	<%= button_tag "작성하기", class: "btn" %>
+</div>
+<% end %>

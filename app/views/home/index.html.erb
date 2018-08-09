@@ -1,0 +1,17 @@
+Hello Word!
+<div class="store_containter">
+<% @posts.each do |post| %>
+	
+	<%= link_to post_path(post.id) do %>
+	    <div class="store_block" style="background-image: url(<%= post.img %>)">
+	        <span class="name"><%= post.name %></span>
+	        <span class="address"><%= post.address %></span>
+	        <span class="tel"><%= post.tel %></span>
+	        <sapn class="score"><%= post.score %></span>
+	    </div>         
+    <% end %>
+<% end %>
+</div>
+
+<a href="/new">등록하기</a>
+

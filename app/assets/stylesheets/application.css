@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.store_containter {
+	padding:10px;
+	border:1px solid #999;
+	margin:0 auto;
+	width: min-content;
+}
+.store_block {
+	width:500px;
+	margin:10px;
+	border:1px solid #999;
+	border-radius: 10px;
+	padding:10px;
+	height:100px;
+	background-color:#AAAAAA;
+	background-size:cover;
+	background-position: 50%;
+	position: relative;
+}
+
+.store_block .name {font-size:18px; font-weight: bold; color:white; position:absolute; bottom:50px; left:15px; }
+.store_block .address {font-size:14px; color:white; position: absolute; bottom:10px; left:15px; }
+.store_block .tel{font-size:14px; color:white; position: absolute; bottom:30px;left:15px;  }
+
+
+
+.detail_container { padding:10px; }
+.detail_container .name {font-size:20px; font-weight: bold}
+.detail_container .address {font-size:14px; color:black; }
+.detail_container .tel{font-size:14px; color:black; }
+.detail_container .score{font-size:14px; color:black; }
